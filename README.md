@@ -24,7 +24,7 @@ All graphics are self-made.
 Duel between two monsters is carried out with the following algorithm:
 * each monster has its dices (some of them are *broken*),
 * all dices are rolled, with the possible values from 1 to 6 (*broken: 1 to 3*),
-* dices are sorted, and only the biggest values are compared,
+* dices are sorted, and only the biggest values from each monster set are compared,
 * the owner of smaller amount loses one dice and the next turn of duel is started,
 * if amounts are equal, both monsters lose one dice,
 * monsters fight until they don't have any dices left.
