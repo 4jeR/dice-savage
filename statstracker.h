@@ -2,10 +2,17 @@
 #define STATSTRACKER_H
 
 
-class StatsTracker
+struct StatsTracker
 {
 public:
-    StatsTracker();
+    StatsTracker() = delete;
+// player
+
+    static int s_seed;
+    static int s_stackSize;
+    static int s_turn;
 };
+
+
 
 #endif // STATSTRACKER_H

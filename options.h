@@ -2,10 +2,20 @@
 #define OPTIONS_H
 
 
-class Options
+struct Options
 {
 public:
-    Options();
+    Options() = delete;
+
+    static int s_actionPoints;
+    static int s_healthPoints;
+    static int s_stackSize;
+    static int s_seed;
+    static int s_pickCardCost;
+    static int s_turnIncome;
 };
+
+
+
 
 #endif // OPTIONS_H
