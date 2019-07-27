@@ -4,7 +4,7 @@ Turn-based card game written in C++ with the support of Qt and STL library.
 # About
 This is the implementation of basic card-game, which represents the fantasy monsters fighting on the field.
 The goal of the game is to defeat enemy player by lowering his health points to 0. 
-Each monster has the name, level and the number of dices, which represent his dueling power. To attack the enemy player, first it is required to slay all his remaining monsters on the field.
+Each monster has the name, level and the number of dices, which represents his dueling power. To attack the enemy player, first it is required to slay all his remaining monsters on the field.
 Players are alternately performing turn, in which they can pick a card from stack, summon monster and attack the enemy monsters
 (or player itself).
 
