@@ -20,6 +20,15 @@ All graphics are self-made.
 * on each game start, the stack is being randomized from the possible monsters in game,
 * opportunity to check all possible monsters and their stats
 
+# Fight system
+Duel between two monsters is carried out with the following algorithm:
+* each monster has its dices (some of them are *broken*),
+* all dices are rolled, with the possible values from 1 to 6 (*broken: 1 to 3*),
+* dices are sorted, and only the biggest values are compared,
+* the owner of smaller amount loses one dice and the next turn of duel is started,
+* if amounts are equal, both monsters lose one dice,
+* monsters fight until they don't have any dices left.
+
 # Screenshots from the game
 * Game
 ![game](https://user-images.githubusercontent.com/38592844/61994389-ca1de900-b079-11e9-8e8e-15aa09b15e67.png)
