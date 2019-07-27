@@ -30,14 +30,14 @@ Duel between two monsters is carried out with the following algorithm:
 * monsters fight until they don't have any dices left.
 
 # Screenshots from the game
-* Game
+* game
 ![game](https://user-images.githubusercontent.com/38592844/61994389-ca1de900-b079-11e9-8e8e-15aa09b15e67.png)
 
-* Main Menu
+* main menu
 ![menu](https://user-images.githubusercontent.com/38592844/61994401-0b15fd80-b07a-11e9-996c-623ab5c8ee19.png)
 
-* Bestiary
+* bestiary
 ![bestiary](https://user-images.githubusercontent.com/38592844/61994408-2aad2600-b07a-11e9-9d61-cc2c77a96760.png)
 
-* Options
+* options
 ![options](https://user-images.githubusercontent.com/38592844/61994415-47495e00-b07a-11e9-82f1-bab9ad557105.png)
