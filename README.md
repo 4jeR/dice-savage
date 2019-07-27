@@ -15,10 +15,10 @@ All graphics are self-made.
 # Implemented features
 * simple GUI menu,
 * options block - to let user adjust everything for himself (costs of actions, stats of players, seed, etc.),
-* basic enemy NPC behaviour algorithm implemented,
+* basic enemy NPC behaviour algorithm,
 * bestiary of all possible creatures in the game is loaded from the file (and also the graphics),
 * on each game start, the stack is being randomized from the possible monsters in game,
-* opportunity to check all possible monsters and their stats
+* possibility to check all possible monsters and their stats
 
 # Fight system
 Duel between two monsters is carried out with the following algorithm:
