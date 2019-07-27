@@ -6,7 +6,6 @@ struct StatsTracker
 {
 public:
     StatsTracker() = delete;
-// player
 
     static int s_seed;
     static int s_stackSize;

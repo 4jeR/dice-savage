@@ -94,9 +94,6 @@ MainWindow::MainWindow(QWidget *parent) :
     Options::s_pickCardCost = ui->lcd_options_cardPickCost->value();
     Options::s_turnIncome = ui->lcd_options_turnIncome->value();
 
-
-    // shows current monster picked
-
     QPixmap pixmap(QDir::currentPath() + "/../DiceSavage/graphics/bestiary.png");
     int w = ui->label_cardAbout->width();
     int h = ui->label_cardAbout->height();
@@ -105,7 +102,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 
-    // loading all monsters to global bestiary
     QFile file(QDir::currentPath() + "/../DiceSavage/bestiary.txt");
     if(!file.open(QIODevice::ReadOnly)) {
         QMessageBox::information(0, "error", file.errorString());
@@ -245,9 +241,6 @@ void MainWindow::on_button_back_clicked()
 
     ui->list_monsters->setCurrentItem(NULL);
 
-
-
-
 }
 
 void MainWindow::on_button_bestiary_clicked()
@@ -297,21 +290,16 @@ void MainWindow::on_list_monsters_itemClicked(QListWidgetItem *item)
     int w = ui->label_cardAbout->width();
     int h = ui->label_cardAbout->height();
     ui->label_cardAbout->setPixmap(qpixmap.scaled(w,h,Qt::KeepAspectRatio));
-
 }
 
 
 void MainWindow::on_button_start_clicked()
 {
-
-
     ui->button_start->setVisible(false);
     ui->button_options->setVisible(false);
     ui->button_about->setVisible(false);
     ui->button_bestiary->setVisible(false);
     ui->button_exit->setVisible(false);
-
-
 
     ui->box_playerCards->setVisible(true);
     ui->box_battleField->setVisible(true);
@@ -327,7 +315,6 @@ void MainWindow::on_button_start_clicked()
     enemy = new Player();
 
     stack = new Stack(bestiary);
-
 
 
     QPixmap pixmap(QDir::currentPath() + "/../DiceSavage/graphics/empty_card.png");
@@ -734,7 +721,7 @@ void MainWindow::on_button_card_5_selected_clicked()
 
 void MainWindow::SummonMonster(Player* p, bool flag){
 
-    // CHECK IF p has enough energy points to summon currently selected monster
+
     if(p->HandSelected() == 5 ){
         if(flag)
             QMessageBox::information(this, "info", "Select monster which has to be summoned!");
@@ -756,12 +743,8 @@ void MainWindow::SummonMonster(Player* p, bool flag){
     else if(p->Hand()[p->HandSelected()].Lvl() * 2 <= p->ActionPoints()){
 
 
-
-        // WE CAN SUMMON monster
-        // calculate the cost of summon
         int cost = p->Hand()[p->HandSelected()].Lvl() * 2;
 
-        // find the index on the field
         int index = 0;
         for(int i = 0; i < 7; ++i){
             if(p->EmptyField()[i]){
@@ -773,12 +756,6 @@ void MainWindow::SummonMonster(Player* p, bool flag){
 
         p->Field()[index] = p->Hand()[p->HandSelected()];
 
-        // add item to the list of attack possibilities
-
-
-
-        // put currently selected card on the field - get the pixmap of selected card
-        // and scale it
 
         QPixmap pixmap(p->Hand()[p->HandSelected()].PixMap());
 
@@ -832,9 +809,6 @@ void MainWindow::SummonMonster(Player* p, bool flag){
                  break;
         }
 
-
-
-        // set empty_card.png to the position in hand which from the monster was summoned
 
         pixmap = QPixmap(QDir::currentPath() + "/../DiceSavage/graphics/empty_card.png");
         w = (flag) ? ui->label_card1->width() : ui->label_enemy_card1->width() ;
@@ -989,7 +963,6 @@ void MainWindow::Attack(bool isPlayerAttacker){
         return;
     }
 
-    // PLAYER IS ATTACKING
     else if(isPlayerAttacker){
 
         if(player->FieldSelected() == 7){
@@ -1023,7 +996,7 @@ void MainWindow::Attack(bool isPlayerAttacker){
 
             player->Field()[player->FieldSelected()].CanAttack() = false;
 
-        } // end of attacking
+        }
 
         else {
             QMessageBox::information(this, "info", "This monster has already attacked in this turn!");
@@ -1032,7 +1005,6 @@ void MainWindow::Attack(bool isPlayerAttacker){
 
 
 
-    // ENEMY IS ATTACKING
 
     else if(!isPlayerAttacker){
         QMessageBox::information(this, "info", "Enemy attacks!");
@@ -1096,10 +1068,6 @@ void MainWindow::CheckForEndGame(Player* p1, Player* p2){
 
 void MainWindow::Fight(Player* attacker, Player* defensor,const int attackIDX,const int defIDX){
 
-
-
-    // attackIDX and defIDX exactly tell which monsters fight
-
     int dices1 = static_cast<int>( ceil( attacker->Field()[attackIDX].Dices() ) );
     int dices2 = static_cast<int>( ceil( defensor->Field()[defIDX].Dices() ) );
 
@@ -1125,9 +1093,6 @@ void MainWindow::Fight(Player* attacker, Player* defensor,const int attackIDX,co
             values2.push_back(std::rand() % 6 + 1);
     }
 
-
-
-    // now we have rolled all the dices and we need to sort them in descending order
     std::sort(values1.begin(), values1.end(), std::greater_equal<int>());
     std::sort(values2.begin(), values2.end(), std::greater_equal<int>());
 
