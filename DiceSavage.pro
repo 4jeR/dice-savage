@@ -25,10 +25,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    player.cpp \
+    stack.cpp \
+    options.cpp \
+    statstracker.cpp \
+    monster.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    player.h \
+    stack.h \
+    options.h \
+    statstracker.h \
+    monster.h
 
 FORMS += \
         mainwindow.ui
