@@ -1,0 +1,1793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1400</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1400</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>911</height>
+    </size>
+   </property>
+   <widget class="QLabel" name="label_cardAbout">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>334</width>
+      <height>494</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>label card</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="text_about">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>290</y>
+      <width>200</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Created by:&lt;/span&gt; Bartłomiej Długosz&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;On: &lt;/span&gt;26.07.2019&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_options">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>340</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adjust anything to Your needs&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_start">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>290</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Start the game&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Start game</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_bestiary">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>390</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Place to get acquainted with monsters&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Bestiary</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_about">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>440</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Check the info about the author&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_back">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>710</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Exit the application&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_exit">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>490</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Exit the application&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="box_playerCards">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>530</y>
+      <width>1121</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_card5">
+     <property name="geometry">
+      <rect>
+       <x>892</x>
+       <y>70</y>
+       <width>180</width>
+       <height>266</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>card5</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_card4">
+     <property name="geometry">
+      <rect>
+       <x>682</x>
+       <y>70</y>
+       <width>180</width>
+       <height>266</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>card4</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_card3">
+     <property name="geometry">
+      <rect>
+       <x>472</x>
+       <y>70</y>
+       <width>180</width>
+       <height>266</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>card3</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_card2">
+     <property name="geometry">
+      <rect>
+       <x>262</x>
+       <y>70</y>
+       <width>180</width>
+       <height>266</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>card2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_card1">
+     <property name="geometry">
+      <rect>
+       <x>52</x>
+       <y>70</y>
+       <width>180</width>
+       <height>266</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>card1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_card_4_selected">
+     <property name="geometry">
+      <rect>
+       <x>727</x>
+       <y>340</y>
+       <width>90</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_card_5_selected">
+     <property name="geometry">
+      <rect>
+       <x>937</x>
+       <y>340</y>
+       <width>90</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_card_3_selected">
+     <property name="geometry">
+      <rect>
+       <x>517</x>
+       <y>340</y>
+       <width>90</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_card_2_selected">
+     <property name="geometry">
+      <rect>
+       <x>307</x>
+       <y>340</y>
+       <width>90</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_card_1_selected">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>340</y>
+       <width>90</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SELECT</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_arrow">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>0</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>arrow</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_seed">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>60</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>65443543</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_seed">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>seed</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_ap">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>20</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>action points</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_ap">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>60</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>3</number>
+    </property>
+    <property name="maximum">
+     <number>15</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_hp">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>20</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>health points</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_hp">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>60</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>5</number>
+    </property>
+    <property name="maximum">
+     <number>30</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_stackSize">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>20</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>stack size</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_stackSize">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>60</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>24</number>
+    </property>
+    <property name="maximum">
+     <number>96</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_ap_min">
+    <property name="geometry">
+     <rect>
+      <x>362</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_ap_max">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_hp_min">
+    <property name="geometry">
+     <rect>
+      <x>662</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_hp_max">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>30</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_stack_min">
+    <property name="geometry">
+     <rect>
+      <x>962</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>24</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_stack_max">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>80</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>96</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcd_options_ap">
+    <property name="geometry">
+     <rect>
+      <x>461</x>
+      <y>80</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>2</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcd_options_hp">
+    <property name="geometry">
+     <rect>
+      <x>761</x>
+      <y>80</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>2</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcd_options_stackSize">
+    <property name="geometry">
+     <rect>
+      <x>1061</x>
+      <y>80</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>2</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_cardPickCost">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>140</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>card pick cost </string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_cardPickCost_min">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>190</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_cardPickCost_max">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>190</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_cardPickCost">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>170</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcd_options_cardPickCost">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>190</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>2</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_turnIncome">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>140</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>turn income</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="slider_turnIncome">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>170</y>
+      <width>220</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>3</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcd_options_turnIncome">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>190</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>2</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_turnIncome_min">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>190</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="options_turnIncome_max">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>190</y>
+      <width>40</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="box_battleField">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>80</y>
+      <width>941</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QGroupBox" name="box_playerBF">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>921</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_playerBF_card1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerBF_card2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerBF_card3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerBF_card4">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerBF_card5">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerBF_card6">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_playerBF_card7">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>30</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card7</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card1_selected">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card2_selected">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card4_selected">
+      <property name="geometry">
+       <rect>
+        <x>415</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card3_selected">
+      <property name="geometry">
+       <rect>
+        <x>285</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card6_selected">
+      <property name="geometry">
+       <rect>
+        <x>675</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card7_selected">
+      <property name="geometry">
+       <rect>
+        <x>805</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_playerBF_card5_selected">
+      <property name="geometry">
+       <rect>
+        <x>545</x>
+        <y>210</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SELECT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_arrowBF">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_playerBF_card5</zorder>
+     <zorder>label_playerBF_card1</zorder>
+     <zorder>label_playerBF_card3</zorder>
+     <zorder>label_playerBF_card4</zorder>
+     <zorder>label_playerBF_card6</zorder>
+     <zorder>label_playerBF_card7</zorder>
+     <zorder>label_playerBF_card2</zorder>
+     <zorder>button_playerBF_card1_selected</zorder>
+     <zorder>button_playerBF_card2_selected</zorder>
+     <zorder>button_playerBF_card4_selected</zorder>
+     <zorder>button_playerBF_card3_selected</zorder>
+     <zorder>button_playerBF_card6_selected</zorder>
+     <zorder>button_playerBF_card7_selected</zorder>
+     <zorder>button_playerBF_card5_selected</zorder>
+     <zorder>label_arrowBF</zorder>
+    </widget>
+    <widget class="QGroupBox" name="box_enemyBF">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>921</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QLabel" name="label_enemyBF_card5">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card5</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enemyBF_card2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enemyBF_card3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enemyBF_card1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enemyBF_card7">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card7</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enemyBF_card6">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_enemyBF_card4">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>40</y>
+        <width>100</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>card4</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="box_playerGUI">
+    <property name="geometry">
+     <rect>
+      <x>1180</x>
+      <y>-20</y>
+      <width>211</width>
+      <height>921</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLCDNumber" name="lcd_ap">
+     <property name="geometry">
+      <rect>
+       <x>49</x>
+       <y>885</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <property name="digitCount">
+      <number>3</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>10.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_hp">
+     <property name="geometry">
+      <rect>
+       <x>119</x>
+       <y>885</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <property name="digitCount">
+      <number>3</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>10.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_healthPoints">
+     <property name="geometry">
+      <rect>
+       <x>121</x>
+       <y>840</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_actionPoint">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>840</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_endTurn">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>250</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>end turn</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_turn">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>140</y>
+       <width>100</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TURN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_turn">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>160</y>
+       <width>100</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="intValue" stdset="0">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_summon">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>630</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>summon</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_playerText">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>790</y>
+       <width>100</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>player</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_turn_2">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>20</y>
+       <width>100</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>INCOME</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_income">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>40</y>
+       <width>100</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="digitCount">
+      <number>2</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="intValue" stdset="0">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_fight">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>590</y>
+       <width>125</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>attack</string>
+     </property>
+    </widget>
+    <zorder>lcd_ap</zorder>
+    <zorder>lcd_hp</zorder>
+    <zorder>label_healthPoints</zorder>
+    <zorder>label_actionPoint</zorder>
+    <zorder>button_endTurn</zorder>
+    <zorder>label_turn</zorder>
+    <zorder>button_summon</zorder>
+    <zorder>label_playerText</zorder>
+    <zorder>label_turn_2</zorder>
+    <zorder>lcd_income</zorder>
+    <zorder>button_fight</zorder>
+    <zorder>lcd_turn</zorder>
+   </widget>
+   <widget class="QRadioButton" name="rbutton_sort">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>420</y>
+      <width>112</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sort by level</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="list_monsters">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>160</y>
+      <width>155</width>
+      <height>256</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="box_enemy">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-10</y>
+      <width>161</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLCDNumber" name="lcd_enemyHP">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <property name="digitCount">
+      <number>3</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>10.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_enemyHP">
+     <property name="geometry">
+      <rect>
+       <x>92</x>
+       <y>55</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_enemyAP">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>55</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLCDNumber" name="lcd_enemyAP">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>40</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <property name="digitCount">
+      <number>3</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>10.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_enemyText">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>enemy</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLCDNumber" name="lcd_stack">
+    <property name="geometry">
+     <rect>
+      <x>53</x>
+      <y>210</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="digitCount">
+     <number>3</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+    <property name="value" stdset="0">
+     <double>10.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_stack">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>161</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_getCard">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>490</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>pick a card</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_enemy_card1">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>0</y>
+      <width>50</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>card1e</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_enemy_card2">
+    <property name="geometry">
+     <rect>
+      <x>535</x>
+      <y>0</y>
+      <width>50</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>card2e</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_enemy_card3">
+    <property name="geometry">
+     <rect>
+      <x>625</x>
+      <y>0</y>
+      <width>50</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>card3e</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_enemy_card4">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>0</y>
+      <width>50</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>card4e</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_enemy_card5">
+    <property name="geometry">
+     <rect>
+      <x>805</x>
+      <y>0</y>
+      <width>50</width>
+      <height>85</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>card5e</string>
+    </property>
+   </widget>
+   <zorder>box_battleField</zorder>
+   <zorder>box_playerGUI</zorder>
+   <zorder>list_monsters</zorder>
+   <zorder>label_cardAbout</zorder>
+   <zorder>box_playerCards</zorder>
+   <zorder>text_about</zorder>
+   <zorder>button_options</zorder>
+   <zorder>button_start</zorder>
+   <zorder>button_bestiary</zorder>
+   <zorder>button_about</zorder>
+   <zorder>button_back</zorder>
+   <zorder>button_exit</zorder>
+   <zorder>lineEdit_seed</zorder>
+   <zorder>options_seed</zorder>
+   <zorder>options_ap</zorder>
+   <zorder>slider_ap</zorder>
+   <zorder>options_hp</zorder>
+   <zorder>slider_hp</zorder>
+   <zorder>options_stackSize</zorder>
+   <zorder>slider_stackSize</zorder>
+   <zorder>options_ap_min</zorder>
+   <zorder>options_ap_max</zorder>
+   <zorder>options_hp_min</zorder>
+   <zorder>options_hp_max</zorder>
+   <zorder>options_stack_min</zorder>
+   <zorder>options_stack_max</zorder>
+   <zorder>lcd_options_ap</zorder>
+   <zorder>lcd_options_hp</zorder>
+   <zorder>lcd_options_stackSize</zorder>
+   <zorder>options_cardPickCost</zorder>
+   <zorder>options_cardPickCost_min</zorder>
+   <zorder>options_cardPickCost_max</zorder>
+   <zorder>slider_cardPickCost</zorder>
+   <zorder>lcd_options_cardPickCost</zorder>
+   <zorder>options_turnIncome</zorder>
+   <zorder>slider_turnIncome</zorder>
+   <zorder>lcd_options_turnIncome</zorder>
+   <zorder>options_turnIncome_min</zorder>
+   <zorder>options_turnIncome_max</zorder>
+   <zorder>rbutton_sort</zorder>
+   <zorder>box_enemy</zorder>
+   <zorder>lcd_stack</zorder>
+   <zorder>label_stack</zorder>
+   <zorder>button_getCard</zorder>
+   <zorder>label_enemy_card1</zorder>
+   <zorder>label_enemy_card2</zorder>
+   <zorder>label_enemy_card3</zorder>
+   <zorder>label_enemy_card4</zorder>
+   <zorder>label_enemy_card5</zorder>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
