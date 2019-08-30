@@ -1,5 +1,5 @@
 # DiceSavage
-Turn-based card game written in C++ with the support of Qt and STL library.
+Turn-based card game written in C++ with the support of Qt and STL.
 
 # About
 This is the implementation of basic card-game, which represents the fantasy monsters fighting on the field.
