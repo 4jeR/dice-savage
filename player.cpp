@@ -11,7 +11,6 @@ Player::Player()
 }
 
 
-
 std::array<Monster, 5>& Player::Hand(){
     return m_hand;
 }
@@ -20,7 +19,6 @@ std::array<Monster, 5>& Player::Hand(){
 std::array<Monster, 7>& Player::Field(){
     return m_field;
 }
-
 
 
 int& Player::ActionPoints(){
@@ -33,7 +31,6 @@ int& Player::HealthPoints(){
 }
 
 
-
 bool* Player::EmptyHand(){
     return m_emptyHand;
 }
@@ -42,7 +39,6 @@ bool* Player::EmptyHand(){
 bool* Player::EmptyField(){
     return m_emptyField;
 }
-
 
 
 int& Player::CardsInHand(){
@@ -55,7 +51,6 @@ int& Player::CardsOnField(){
 }
 
 
-
 int& Player::HandSelected(){
     return m_handSelected;
 }
@@ -64,4 +59,3 @@ int& Player::HandSelected(){
 int& Player::FieldSelected(){
     return m_fieldSelected;
 }
-
