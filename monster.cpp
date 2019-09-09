@@ -3,9 +3,7 @@
 
 Monster::Monster(QString name, QPixmap pixmap, int lvl, float dices):
     m_name(name), m_pixmap(pixmap), m_lvl(lvl), m_dices(dices), m_canAttack(true)
-{
-
-}
+{}
 
 Monster::Monster(const Monster& m)
 {
@@ -20,6 +18,7 @@ Monster::Monster(const Monster& m)
 bool Monster::operator<(const Monster& rhs){
     return m_name < rhs.m_name;
 }
+
 
 Monster& Monster::operator=(const Monster& rhs){
     m_name = rhs.m_name;
@@ -36,9 +35,11 @@ QString Monster::Name()const{
     return m_name;
 }
 
+
 QPixmap& Monster::PixMap(){
     return m_pixmap;
 }
+
 
 int Monster::Lvl()const{
     return m_lvl;
@@ -49,9 +50,11 @@ float Monster::Dices()const{
     return m_dices;
 }
 
+
 bool& Monster::CanAttack(){
     return m_canAttack;
 }
+
 
 int Monster::CalculateDamage()const{
     int dmg = 0;
