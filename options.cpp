@@ -1,7 +1,5 @@
 #include "options.h"
 
-
-
 int Options::s_actionPoints;
 int Options::s_healthPoints;
 int Options::s_stackSize;
