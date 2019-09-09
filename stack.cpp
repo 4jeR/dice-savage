@@ -1,6 +1,5 @@
 #include "stack.h"
 
-
 Stack::Stack(const std::vector<Monster>& bestiaryVec)
 {
     srand(time(NULL));
@@ -14,4 +13,3 @@ Stack::Stack(const std::vector<Monster>& bestiaryVec)
 std::vector<Monster>& Stack::GetStack(){
     return m_stack;
 }
-
